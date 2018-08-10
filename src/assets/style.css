@@ -1,6 +1,45 @@
+:root {
+  --white: whitesmoke;
+  --black: #1b1b1b;
+  --gray: #666;
+  --primary: teal;
+}
+
+html, body {
+  background: var(--white);
+  color: var(--black);
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6;
+  max-width: 30rem;
+  margin: 0 auto;
 }
-h1, h2, h3, h4 {
+a {
+  color: var(--primary);
+}
+
+.title {
   font-family: 'Eczar', sans-serif;
+  text-transform: uppercase;
+}
+
+
+header.masthead {
+  padding: 2rem 0;
+  /* text-align: center; */
+}
+.site-name {
+  color: var(--black);
+  font-size: 3rem;
+  text-decoration: none;
+}
+.site-name:hover {
+  font-weight: bold;
+}
+
+
+.text-muted {
+  color: var(--gray);
 }
