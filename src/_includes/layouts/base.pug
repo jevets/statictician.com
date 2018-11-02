@@ -24,8 +24,9 @@ html(lang="en")
     block body
       block header
         include /layouts/_header
-      block content
-        | !{ content }
+      main
+        block content
+          | !{ content }
 
     block scripts
       script(src="https://identity.netlify.com/v1/netlify-identity-widget.js")

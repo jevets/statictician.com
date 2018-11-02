@@ -3,6 +3,6 @@ extends /layouts/base.pug
 block content
   article.post
     .post-meta
-      small.text-muted= date.toLocaleDateString()
-    h1= title
+      small.text-muted= new Date(date).toLocaleDateString()
+    h1.post-title= title
     | !{ content }
